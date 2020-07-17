@@ -25,10 +25,12 @@ class ContactFormPage extends React.Component {
         // Set options for axios. The URL we're submitting to
         // (this.props.location.pathname) is the current page.
         const axiosOptions = {
-            url: this.props.location.pathname,
+            // url: this.props.location.pathname,
             method: "post",
+
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),
+            url: "https://jovial-carson-f1b19c.netlify.app"
         }
 
         // Submit to Netlify. Upon success, set the feedback message and clear all
