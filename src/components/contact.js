@@ -30,7 +30,7 @@ class ContactFormPage extends React.Component {
 
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),
-            // url: "https://jovial-carson-f1b19c.netlify.app"
+            url: "https://jovial-carson-f1b19c.netlify.app"
         }
 
         // Submit to Netlify. Upon success, set the feedback message and clear all
